@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.RM{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.DATA{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.NOME{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    /*width: 100%;*/
+    padding: 10px;
+    background-color: #0296E0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 120px; /* Largura do botão */
+    height: 50px;
+}
+
+button[type="button"] {
+    /*width: 100%;*/
+    padding: 10px;
+    background-color: #0296E0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px; /* Largura do botão */
+    height: 50px;
+}
+
+button[type="reset"] {
+    /*width: 100%;*/
+    padding: 10px;
+    background-color: #0296E0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px; /* Largura do botão */
+    height: 50px;
+}
+
+button[type="submit"]:hover {
+    background-color: #A2D1E9;
+}
+
+button[type="button"]:hover {
+    background-color: #A2D1E9;
+}
+
+button[type="reset"]:hover {
+    background-color: #A2D1E9;
+}
+
+select {
+   width: 80%; /* Largura total */
+   padding: 10px; /* Espaçamento interno */
+   margin: 10px 0; /* Espaçamento externo */
+   border-radius: 5px; /* Bordas arredondadas */
+   border: 2px solid #ccc; /* Borda cinza */
+   font-size: 16px; /* Tamanho da fonte */
+   box-sizing: border-box; /* Inclui padding e borda na largura */
+}
+
+        /* Estilo para quando o select está em foco */
+select:focus {
+   border-color: #007BFF; /* Cor da borda ao focar */
+   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra ao redor */
+   outline: none; /* Remove o contorno padrão */
+}

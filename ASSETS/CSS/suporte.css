@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #3D4055 url('fundocinza.png') no-repeat center;
+    background-size: cover;
+}
+
+.sidebar{
+    width: 200px;
+    height: 100vh; 
+    background: #442868;
+    color: white;
+    position: fixed;
+}
+
+.sidebar h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    display: block;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile-pic:hover{
+    transform: scale(1.05);
+}
+
+.sidebar a{
+    display: block;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover{
+    background: #444;
+}
+
+
+.main{
+    margin-left: 200px;
+}
+
+
+.header{
+    background-color: black;
+    padding: 10px;
+}
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+
+.content{
+    padding: 20px;
+}
+
+.botao{
+    display: flex;              
+    justify-content: center;   
+    align-items: center;       
+    width: 400px;              
+    height: 50px;
+    background-color: #682bd7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px 0;           
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* hover */
+.botao:hover{
+    background-color: #4b1fa3;
+    transform: scale(1.05);
+}
+
+/* clique */
+.botao:active{
+    transform: scale(0.98);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 200px;
+    right: 0;
+}

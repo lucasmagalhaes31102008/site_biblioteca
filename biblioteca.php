@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost Gamer - Esqueci Senha</title>
+    <link rel="stylesheet" href="../ASSETS/CSS/loginCliente.css">
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar jogos...">
+    </div>
+    <button id="menu-btn">☰</button>
+
+    <nav id="menu" class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="biblioteca.html">Biblioteca</a></li>
+            <li><a href="categoria.html">Categoria</a></li>
+            <li><a href="loginCliente.html">Login</a></li>
+            <li><a href="cadastroCliente.html">Cadastro</a></li>
+            <li><a href="suporte.html">Suporte</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="../ASSETS/IMG/logo.png.png" alt="Ghost Gamer" class="logo-img">
+            <span class="logo-text"><a href="../index.html">GHOST GAMER</a></span>
+        </div>
+
+        <!-- Apenas Login Form - Centralizado -->
+        <div class="login-wrapper">
+            <div class="form-box login-box">
+                <h2>Recuperar Senha</h2>
+                <form>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Digite seu email">
+                    </div>
+                    <button type="submit" class="btn-login">Mandar Codigo do Email</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../ASSETS/JS/index.js"></script>
+</body>
+</html>

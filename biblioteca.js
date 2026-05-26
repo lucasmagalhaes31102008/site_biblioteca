@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Remove as barras de rolagem */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #fff;
+    min-height: 100vh;
+}
+
+/* Header com logo fantasma */
+.header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ab58bc;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: flex-end;
+
+}
+
+.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px #ab58bc);
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+/* Botão do menu */
+#menu-btn {
+    font-size: 30px;
+    background: #ab58bc;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001;
+    color: white;
+    transition: 0.3s;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#menu-btn:hover {
+    background: #843ba9;
+    transform: scale(1.05);
+}
+
+/* Menu lateral */
+.menu {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    padding-top: 70px;
+    border-right: 2px solid #b653cd;
+}
+
+.menu.ativo {
+    left: 0;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 12px 24px;
+    margin: 5px 0;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu.ativo li {
+    opacity: 1;
+    transform: translateX(0);
+}
+.suporteContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* espaço entre os itens */
+    margin: 0;
+}
+
+.card {
+    border: 3px solid purple; /* retângulo roxo */
+    padding: 10px;
+    cursor: pointer; /* indica que é clicável */
+    justify-items: center;
+}
+
+.suporte {
+    width: 300px;
+    height: 50px;
+    background-color: purple;
+
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical */
+
+    color: white; /* cor do texto */
+    border-radius: 12px; /* deixa as bordas arredondadas */
+}
+
+.msuporte{
+    list-style: none;
+    padding: 0;
+    padding: 12px 24px;
+    margin: 5px 0;
+
+}
+.menu.ativo li:nth-child(1) { transition-delay: 0.05s; }
+.menu.ativo li:nth-child(2) { transition-delay: 0.1s; }
+.menu.ativo li:nth-child(3) { transition-delay: 0.15s; }
+.menu.ativo li:nth-child(4) { transition-delay: 0.2s; }
+.menu.ativo li:nth-child(5) { transition-delay: 0.25s; }
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #86269e;
+    transform: translateX(10px);
+}
+
+.menu li:hover {
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ff6b6b20, #1a1a2e);
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.hero-content h2 {
+    font-size: 28px;
+    color: #ab58bc;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    background: linear-gradient(45deg, #ab58bc, #ab58bc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.btn-download {
+    background: #ab58bc;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background: #ab58bc;
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.4);
+}
+
+/* Games Section */
+.games-section {
+    padding: 50px 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #ab58bc;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    border-color: #ab58bc;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2);
+}
+
+.game-img {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.game-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.play-btn {
+    background: #ab58bc;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.play-btn:hover {
+    background: #ab58bc;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #0f0f1a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    border-top: 1px solid #ab58bc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 999;
+    display: none;
+}
+
+.overlay.ativo {
+    display: block;
+}
+/* Ajuste do header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Barra de pesquisa */
+.search-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: 1px solid #ab58bc;
+    background: rgba(255,255,255,0.05);
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efeito ao clicar */
+.search-box input:focus {
+    border-color: #ab58bc;
+    box-shadow: 0 0 10px #ab58bc80;
+}
+
+/* Placeholder */
+.search-box input::placeholder {
+    color: #aaa;
+}
